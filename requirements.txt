@@ -6,4 +6,5 @@ scikit-learn
 imbalanced-learn
 pyyaml
 joblib
+flask
 -e .
