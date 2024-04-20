@@ -3,8 +3,8 @@ import os
 from datetime import datetime
 
 
-LOG_FILE = f'{datetime.now().strftime('%d_%m_%Y_%H_%M_%S')}.log'
-LOG_FOLDER = os.path.join("logs", f'{datetime.now().strftime('%d%m%Y')}')
+LOG_FILE = f"{datetime.now().strftime('%d_%m_%Y_%H_%M_%S')}.log"
+LOG_FOLDER = os.path.join("logs", f"{datetime.now().strftime('%d%m%Y')}")
 
 os.makedirs(LOG_FOLDER, exist_ok=True)
 

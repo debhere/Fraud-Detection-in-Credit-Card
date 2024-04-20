@@ -6,6 +6,11 @@ __pycache__/
 # C extensions
 *.so
 
+# Folders Big files
+data/
+artifacts/train.csv
+artifacts/test.csv
+
 # Distribution / packaging
 .Python
 build/
