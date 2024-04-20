@@ -1,0 +1,7 @@
+data_folder: data
+data_file: creditcard.csv
+artifacts_folder: artifacts
+train: train.csv
+test: test.csv
+data_pipeline: data_pipeline
+model: model
