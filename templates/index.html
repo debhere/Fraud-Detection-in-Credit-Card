@@ -8,7 +8,7 @@
         <p><h1>Welcome to the playground</h1></p>
         <hr>
 
-        <form>
+        <form action="{{url_for('predict')}}" method="post">
             <div class="features">
                 <div>
                     <label for="v1">V1: </label>
@@ -43,37 +43,37 @@
                     <input type="text" name="v13" id="v13"><br><br>
                     <label for="v14">V14: </label>
                     <input type="text" name="v14" id="v14"><br><br>
-                    <label for="v15">v15: </label>
+                    <label for="v15">V15: </label>
                     <input type="text" name="v15" id="v15"><br><br>
-                    <label for="v16">v16: </label>
-                    <input type="text" name="v16" id="V16"><br><br>
-                    <label for="v17">v17: </label>
+                    <label for="v16">V16: </label>
+                    <input type="text" name="v16" id="v16"><br><br>
+                    <label for="v17">V17: </label>
                     <input type="text" name="v17" id="v17"><br><br>
-                    <label for="v18">v18: </label>
+                    <label for="v18">V18: </label>
                     <input type="text" name="v18" id="v18"><br><br>
                 </div>
                 <div>
                     <label for="v19">V19: </label>
-                    <input type="text" name="v19" id="V19"><br><br>
+                    <input type="text" name="v19" id="v19"><br><br>
                     <label for="v20">V20: </label>
                     <input type="text" name="v20" id="v20"><br><br>
-                    <label for="v21">v21: </label>
+                    <label for="v21">V21: </label>
                     <input type="text" name="v21" id="v21"><br><br>
-                    <label for="v22">v22: </label>
+                    <label for="v22">V22: </label>
                     <input type="text" name="v22" id="v22"><br><br>
-                    <label for="v23">v23: </label>
+                    <label for="v23">V23: </label>
                     <input type="text" name="v23" id="v23"><br><br>
-                    <label for="v24">v24: </label>
+                    <label for="v24">V24: </label>
                     <input type="text" name="v24" id="v24"><br><br>
                 </div>
                 <div>
                     <label for="v25">V25: </label>
-                    <input type="text" name="v25" id="V25"><br><br>
+                    <input type="text" name="v25" id="v25"><br><br>
                     <label for="v26">V26: </label>
                     <input type="text" name="v26" id="v26"><br><br>
-                    <label for="v27">v27: </label>
+                    <label for="v27">V27: </label>
                     <input type="text" name="v27" id="v27"><br><br>
-                    <label for="v28">v28: </label>
+                    <label for="v28">V28: </label>
                     <input type="text" name="v28" id="v28"><br><br>
                     <label for="amount">Amount: </label>
                     <input type="text" name="amount" id="amount"><br><br>
@@ -81,7 +81,10 @@
                     <input type="text" name="time" id="time"><br><br>
                 </div>
             </div>
-            <button type="button" onclick="alert('Checking')">Predict</button>            
+            <input class="btn btn-primary" type="submit" value="Predict Customer Likelyhood" required />           
         </form>
+        <h2>
+            {{prediction_text}}
+        </h2>
     </body>
 </html>
