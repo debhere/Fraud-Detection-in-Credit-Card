@@ -15,7 +15,7 @@ label {
     text-align: left;
     display: inline-block;
 }
-button {
+.btn btn-primary {
     align-content: center;
     size: 20px;
     display: inline-block;
